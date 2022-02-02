@@ -1,0 +1,36 @@
+GET http://localhost:3001/api/persons
+###
+GET http://localhost:3001/info
+###
+GET http://localhost:3001/api/persons/61ee21b7c6126a981162b511
+###
+DELETE http://localhost:3001/api/persons/4
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Test Name",
+    "number": "123-456789"
+}
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": ""
+}
+###
+PUT http://localhost:3001/api/persons/61f3a82f13bda90eef907e66
+Content-Type: application/json
+
+{
+  "name": "Ab",
+  "number": "212121"
+}
+###
+DELETE http://localhost:3001/api/persons/61f6371fa81f92a73425bc2b
+
+
+###
+GET http://localhost:3001/invalid-route
